@@ -16,12 +16,12 @@
 // パラメータ……'<h1>Hello JQuery!!</h1>'
 
 
-$(function(){
-  $('.box1').css({
-    'background-color': '#0000FF',
-    'height': '100px'
-  });
-});
+// $(function(){
+//   $('.box1').css({
+//     'background-color': '#0000FF',
+//     'height': '100px'
+//   });
+// });
 
 // $('セレクタ').css({
 //   'プロパティ1': '値1',
@@ -32,3 +32,7 @@ $(function(){
 
 //   'プロパティn': '値n'
 // });
+
+$(function(){
+  $('.box1').slideUp();
+});
