@@ -1,44 +1,12 @@
-// $(document).ready(function () {
-//   $('body').html('<h1>Hello jQuery!!</h1>');
-// });
-
-// 一行目の省略形
-// $(function(){
-//   jQueryプログラムの内容
-// });
-
-// 二行目
-// $( セレクタ ).メソッド ( パラメータ );
-// と記述
-
-// セレクタ……body
-// メソッド……html
-// パラメータ……'<h1>Hello JQuery!!</h1>'
-
-
-// $(function(){
-//   $('.box1').css({
-//     'background-color': '#0000FF',
-//     'height': '100px'
-//   });
-// });
-
-// $('セレクタ').css({
-//   'プロパティ1': '値1',
-//   'プロパティ2': '値2',
-
-//   :
-//   :
-
-//   'プロパティn': '値n'
-// });
-
-//
-// $(function(){
-//   $('.box1').show();
-//   $('.box1').css({'background-color': '#0000FF'});
-// });
-
 $(function(){
-  $('.box1').hide();
+  $('.box1').mouseover(function(){
+    $('.box1').css({'background-color': '#0000FF'});
+  });
+  $('.box1').mouseout(function(){
+    $('.box1').css({'background-color': '#FF0000'});
+  });
 });
+
+// $('.セレクタ名').イベント名(function(){
+//   イベント発生時に行われる処理
+// });
