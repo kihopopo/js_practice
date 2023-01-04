@@ -1,25 +1,7 @@
-// $(function(){
-//   $('.bg1').on('click', function(){
-//     $('.bg1').slideUp();
-//   });
-
-//   $('.bg2').on('click', function(){
-//     $('.bg2').slideUp();
-//   });
-
-//   $('.bg3').on('click', function(){
-//     $('.bg3').slideUp();
-//   });
-
-//   $('.bg4').on('click', function(){
-//     $('.bg4').slideUp();
-//   });
-// });
-
-// 上記と同じ役目を果たす
 $(function(){
-  $('.box1').on('click', function(){
-    $(this).slideUp();
+  $('button').on('click', function(){
+    $('ul').children().css('color','red');
   });
 });
-// this（クリックされた要素）
+// .children()は、HTML要素直下のすべての子要素を取得
+// ここでのchildrenは「ul要素の子要素」、つまり、li要素が対象
