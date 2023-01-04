@@ -1,25 +1,25 @@
 // $(function(){
-//   $('.box1').mouseover(function(){
-//     $('.box1').addClass('box1-ext');
+//   $('.bg1').on('click', function(){
+//     $('.bg1').slideUp();
 //   });
-//   $('.box1').mouseout(function(){
-//     $('.box1').removeClass('box1-ext');
+
+//   $('.bg2').on('click', function(){
+//     $('.bg2').slideUp();
+//   });
+
+//   $('.bg3').on('click', function(){
+//     $('.bg3').slideUp();
+//   });
+
+//   $('.bg4').on('click', function(){
+//     $('.bg4').slideUp();
 //   });
 // });
 
-// addClass( )は、対象のHTML要素にclass属性を追加。
-// removeClass( )は、要素に設定されているclass属性が解除。
-
+// 上記と同じ役目を果たす
 $(function(){
   $('.box1').on('click', function(){
-    $('.box1').addClass('box1-ext');
-  });
-  $('.box1').mouseout(function(){
-    $('.box1').removeClass('box1-ext');
+    $(this).slideUp();
   });
 });
-
-// マウスクリックイベント
-// $('.セレクタ名').on('click', function() {
-//   イベント発生時に行われる処理
-// });
+// this（クリックされた要素）
